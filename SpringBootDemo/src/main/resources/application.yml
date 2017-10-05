@@ -1,0 +1,22 @@
+#server:
+#  port: 8080
+##cupSize: A
+##age: 20
+##content: "cupSize: ${cupSize}: age: ${age}"
+#gril:
+#  cupSize: B
+#  age: 20
+spring:
+  profiles:
+    active: dev
+#数据库的配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springbootjpa
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
